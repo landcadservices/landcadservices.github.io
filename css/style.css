@@ -137,3 +137,39 @@ section {
   font-size: 1.1rem;
   opacity: 0.9;
 }
+:root{
+  --bg:#ffffff;
+  --text:#111827;
+  --primary:#0a2742;
+  --card:#f4f7fb;
+}
+
+body.dark{
+  --bg:#0b1220;
+  --text:#e5e7eb;
+  --primary:#1e293b;
+  --card:#111827;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  transition:background .3s,color .3s;
+}
+
+section{
+  padding:80px 20px;
+}
+
+h1{font-size:3rem}
+h2{font-size:2rem}
+p{font-size:1.05rem}
+
+.card,.services-grid div{
+  background:var(--card);
+  border-radius:14px;
+}
+
+.hero-content{
+  backdrop-filter:blur(6px);
+}
