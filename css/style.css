@@ -173,3 +173,12 @@ p{font-size:1.05rem}
 .hero-content{
   backdrop-filter:blur(6px);
 }
+.hidden{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all .7s ease;
+}
+.show{
+  opacity:1;
+  transform:none;
+}
