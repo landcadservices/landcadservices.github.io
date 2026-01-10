@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+}
+
+.header {
+  background: #0a2742;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.logo {
+  height: 45px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff7a18;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.services {
+  padding: 60px;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
