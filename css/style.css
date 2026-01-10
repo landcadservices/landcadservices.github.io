@@ -1,184 +1,204 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
-}
+/* =========================
+   LANDCAD – 2025 UI SYSTEM
+   GSOURCE STYLE
+========================= */
 
-.header {
-  background: #0a2742;
-  position: sticky;
-  top: 0;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-}
-
-.logo {
-  height: 45px;
-}
-
-nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.hero {
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:16px;
-  padding:40px;
-}
-.services-grid div{
-  background:#fff;
-  padding:18px;
-  border-radius:10px;
-  box-shadow:0 6px 18px rgba(0,0,0,.08);
-  font-weight:500;
-}
-
-.hero-content {
-  background: rgba(0,0,0,0.6);
-  padding: 40px;
-  color: #fff;
-  text-align: center;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background: #ff7a18;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.services {
-  padding: 60px;
-  text-align: center;
-}
-
-.card {
-  background: #fff;
-  margin: 15px;
-  padding: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-.wa-float{
-  position:fixed; right:20px; bottom:20px;
-  background:#25D366; color:#fff;
-  width:56px; height:56px; border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  font-size:28px; text-decoration:none;
-  box-shadow:0 8px 20px rgba(0,0,0,.25);
-  z-index:9999;
-}
-.founder{
-  padding:60px;
-  background:#f4f7fb;
-  text-align:center;
-}
-.founder-card{
-  max-width:700px;
-  margin:20px auto;
-  display:flex;
-  gap:20px;
-  align-items:center;
-  justify-content:center;
-}
-.founder-photo{
-  width:120px;
-  height:120px;
-  border-radius:50%;
-  background:#ddd;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:bold;
-}
-h1, h2, h3 {
-  letter-spacing: -0.5px;
-}
-
-section {
-  line-height: 1.8;
-}
-
-.services-grid div,
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.services-grid div:hover,
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-}
-
-.hero-content h1 {
-  font-size: 2.8rem;
-}
-
-.hero-content p {
-  font-size: 1.1rem;
-  opacity: 0.9;
-}
 :root{
-  --bg:#ffffff;
+  --dark:#0b1220;
+  --dark-2:#0f172a;
+  --light:#ffffff;
   --text:#111827;
-  --primary:#0a2742;
-  --card:#f4f7fb;
-}
-
-body.dark{
-  --bg:#0b1220;
-  --text:#e5e7eb;
-  --primary:#1e293b;
-  --card:#111827;
+  --muted:#94a3b8;
+  --accent:#ff7a18;
+  --radius:16px;
 }
 
 body{
-  background:var(--bg);
+  margin:0;
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+  background:var(--light);
   color:var(--text);
-  transition:background .3s,color .3s;
+  line-height:1.8;
 }
 
-section{
-  padding:80px 20px;
+/* CONTAINER */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
 }
 
-h1{font-size:3rem}
-h2{font-size:2rem}
-p{font-size:1.05rem}
-
-.card,.services-grid div{
-  background:var(--card);
-  border-radius:14px;
+/* HEADER */
+.topbar{
+  position:sticky;
+  top:0;
+  background:rgba(11,18,32,.85);
+  backdrop-filter:blur(10px);
+  z-index:999;
+}
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 0;
+}
+.logo{height:42px}
+nav a{
+  color:#fff;
+  margin-left:24px;
+  text-decoration:none;
+  font-weight:500;
 }
 
-.hero-content{
-  backdrop-filter:blur(6px);
+/* HERO */
+.hero-2025{
+  height:92vh;
+  background-size:cover;
+  background-position:center;
 }
+.hero-overlay{
+  height:100%;
+  background:linear-gradient(180deg,rgba(0,0,0,.6),rgba(0,0,0,.9));
+}
+.hero-inner{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  max-width:900px;
+  margin:auto;
+  color:#fff;
+}
+.hero-inner h1{
+  font-size:3.6rem;
+  line-height:1.1;
+}
+.hero-inner p{
+  color:#cbd5f5;
+  margin:18px 0 28px;
+}
+
+/* BUTTONS */
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+  padding:14px 28px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+}
+.btn-ghost{
+  border:1px solid #fff;
+  color:#fff;
+  padding:14px 28px;
+  border-radius:10px;
+  margin-left:14px;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+.section{padding:100px 0}
+.section.dark{
+  background:var(--dark);
+  color:#e5e7eb;
+}
+.section.soft{
+  background:#f4f7fb;
+}
+.center{text-align:center}
+
+/* CARDS */
+.cards-4{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:26px;
+  margin-top:50px;
+}
+.card{
+  background:#fff;
+  padding:34px;
+  border-radius:var(--radius);
+  box-shadow:0 20px 50px rgba(0,0,0,.12);
+  font-weight:600;
+}
+
+/* SERVICES GRID */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+  margin-top:50px;
+}
+.services-grid div{
+  background:var(--dark-2);
+  color:#e5e7eb;
+  padding:24px;
+  border-radius:var(--radius);
+}
+
+/* WHY */
+.why{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+  margin-top:50px;
+}
+
+/* FOUNDER */
+.founder{
+  display:flex;
+  gap:26px;
+  align-items:center;
+  justify-content:center;
+}
+.avatar{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background:#d1d5db;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* CTA STRIP */
+.cta-strip{
+  background:#0a2742;
+  color:#fff;
+  padding:90px 20px;
+  text-align:center;
+}
+
+/* FLOATING BUTTONS */
+.wa-float,.call-float{
+  position:fixed;
+  bottom:20px;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  box-shadow:0 12px 30px rgba(0,0,0,.35);
+  z-index:9999;
+}
+.wa-float{right:20px;background:#25D366}
+.call-float{left:20px;background:#0a2742}
+
+/* ANIMATION */
 .hidden{
   opacity:0;
   transform:translateY(40px);
-  transition:all .7s ease;
+  transition:all .8s ease;
 }
 .show{
   opacity:1;
   transform:none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero-inner h1{font-size:2.4rem}
+  nav a{margin-left:14px}
 }
