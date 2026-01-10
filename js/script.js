@@ -1,28 +1,14 @@
-// THEME TOGGLE
-const btn = document.getElementById("themeToggle");
-if (localStorage.theme === "dark") {
-  document.body.classList.add("dark");
-}
-if (btn) {
-  btn.onclick = () => {
-    document.body.classList.toggle("dark");
-    localStorage.theme = document.body.classList.contains("dark")
-      ? "dark"
-      : "light";
-  };
-}
-
-// SCROLL ANIMATION
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
+// SCROLL ANIMATION – 2025 STYLE
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
       entry.target.classList.add("show");
     }
   });
-});
+},{threshold:0.15});
 
-document.querySelectorAll("section, .card, .services-grid div")
-.forEach(el => {
+document.querySelectorAll("section,.card,.services-grid div,.why div")
+.forEach(el=>{
   el.classList.add("hidden");
   observer.observe(el);
 });
