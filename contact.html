@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | LandCad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="nav-container">
+    <img src="assets/logo.png" class="logo" alt="LandCad Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section style="padding:40px; text-align:center;">
+  <h1>Contact Us</h1>
+  <p><strong>Mobile:</strong> 9511802954</p>
+  <p><strong>Email:</strong> landcadservice@gmail.com</p>
+  <p><strong>Address:</strong> New Mankapur, Nagpur – 440030</p>
+</section>
+
+<section style="padding:40px;">
+  <h2 style="text-align:center;">Send Inquiry</h2>
+
+  <form onsubmit="sendInquiry(); return false;" class="inq-form">
+    <input id="qname" placeholder="Your Name" required>
+    <input id="qphone" placeholder="Mobile Number" required>
+    <select id="qservice" required>
+      <option value="">Service Required</option>
+      <option>Land Survey</option>
+      <option>Drone / Aerial Mapping</option>
+      <option>GIS Consulting</option>
+      <option>Mining & Geological</option>
+      <option>Irrigation / Utility Survey</option>
+    </select>
+    <textarea id="qmsg" placeholder="Message" required></textarea>
+    <button type="submit">Send Inquiry</button>
+  </form>
+</section>
+
+<section style="padding:40px;">
+  <iframe
+    src="https://www.google.com/maps?q=New%20Mankapur%20Nagpur%20440030&output=embed"
+    width="100%" height="300" style="border:0;" loading="lazy">
+  </iframe>
+</section>
+
+<a href="https://wa.me/919511802954?text=Hello%20LandCad,%20I%20want%20surveying%20services"
+   class="wa-float" target="_blank">💬</a>
+
+<script>
+function sendInquiry(){
+  const n=qname.value,p=qphone.value,s=qservice.value,m=qmsg.value;
+  const txt=`Inquiry from LandCad%0AName:${n}%0AMobile:${p}%0AService:${s}%0AMessage:${m}`;
+  window.open(`https://wa.me/919511802954?text=${txt}`,'_blank');
+  window.location.href=`mailto:landcadservice@gmail.com?subject=Website Inquiry&body=${txt}`;
+}
+</script>
+
+</body>
+</html>
