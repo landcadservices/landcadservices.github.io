@@ -133,3 +133,19 @@ nav a{
   .image-3{grid-template-columns:1fr}
   .founder{grid-template-columns:1fr}
 }
+/* IMAGE BASED SERVICES */
+.service-box img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:16px;
+}
+
+.service-box{
+  overflow:hidden;
+}
+
+.service-box h3{
+  margin-top:10px;
+}
