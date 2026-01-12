@@ -151,3 +151,14 @@ nav a{
   .hero-inner h1{font-size:2.3rem}
   nav a{margin-left:14px}
 }
+.hero-2025{
+  position:relative;
+}
+.hero-inner{
+  padding:0 20px;
+}
+.hero-inner h1{
+  background:linear-gradient(90deg,#ffffff,#ffcc99);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
