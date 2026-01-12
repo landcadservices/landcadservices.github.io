@@ -106,10 +106,14 @@ nav a{
   margin-top:50px;
 }
 .services-grid div{
-  background:var(--dark2);
-  color:#e5e7eb;
-  padding:24px;
-  border-radius:var(--radius);
+  text-align:center;
+  font-size:16px;
+  padding:24px 20px;
+  border:1px solid #e2e8f0;
+  background:#fafbfc;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  transition:.3s ease;
 }
 
 /* CTA */
