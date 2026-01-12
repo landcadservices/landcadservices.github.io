@@ -323,3 +323,81 @@ body{
   color:var(--accent);
   margin-right:10px;
 }
+/* ===== FORCE REMOVE BLUE TONE (FINAL FIX) ===== */
+
+/* Header & Navbar */
+.topbar,
+header,
+nav{
+  background:#2b2e34 !important;
+}
+
+/* Hero overlay */
+.hero-overlay{
+  background:rgba(31,35,40,.85) !important;
+}
+
+/* Sections */
+.section,
+.section.soft,
+.stats-section{
+  background:#f5f6f7 !important;
+}
+
+/* Dark cards & boxes */
+.card,
+.stat-box,
+.services-grid div,
+.trust-boxes div{
+  background:#1f2328 !important;
+  color:#ffffff !important;
+}
+
+/* Headings */
+h1,h2,h3,h4{
+  color:#1f2937 !important;
+}
+
+/* Accent removal */
+*{
+  --accent:#9ca3af;
+}
+/* ===== FORCE REMOVE BLUE TONE (FINAL FIX) ===== */
+
+/* Header & Navbar */
+.topbar,
+header,
+nav{
+  background:#2b2e34 !important;
+}
+
+/* Hero overlay */
+.hero-overlay{
+  background:rgba(31,35,40,.85) !important;
+}
+
+/* Sections */
+.section,
+.section.soft,
+.stats-section{
+  background:#f5f6f7 !important;
+}
+
+/* Dark cards & boxes */
+.card,
+.stat-box,
+.services-grid div,
+.trust-boxes div{
+  background:#1f2328 !important;
+  color:#ffffff !important;
+}
+
+/* Headings */
+h1,h2,h3,h4{
+  color:#1f2937 !important;
+}
+
+/* Accent removal */
+*{
+  --accent:#9ca3af;
+}
