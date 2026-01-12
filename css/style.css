@@ -1,11 +1,10 @@
 /* =========================
-   LANDCAD – 2025 UI SYSTEM
-   GSOURCE STYLE
+   LANDCAD – GSOURCE 2025 UI
 ========================= */
 
 :root{
   --dark:#0b1220;
-  --dark-2:#0f172a;
+  --dark2:#0f172a;
   --light:#ffffff;
   --text:#111827;
   --muted:#94a3b8;
@@ -15,7 +14,7 @@
 
 body{
   margin:0;
-  font-family:Inter,Segoe UI,Arial,sans-serif;
+  font-family:Segoe UI,Arial,sans-serif;
   background:var(--light);
   color:var(--text);
   line-height:1.8;
@@ -52,7 +51,7 @@ nav a{
 
 /* HERO */
 .hero-2025{
-  height:92vh;
+  height:90vh;
   background-size:cover;
   background-position:center;
 }
@@ -70,41 +69,16 @@ nav a{
   color:#fff;
 }
 .hero-inner h1{
-  font-size:3.6rem;
+  font-size:3.5rem;
   line-height:1.1;
 }
 .hero-inner p{
   color:#cbd5f5;
-  margin:18px 0 28px;
-}
-
-/* BUTTONS */
-.btn-primary{
-  background:var(--accent);
-  color:#fff;
-  padding:14px 28px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:600;
-}
-.btn-ghost{
-  border:1px solid #fff;
-  color:#fff;
-  padding:14px 28px;
-  border-radius:10px;
-  margin-left:14px;
-  text-decoration:none;
+  margin-top:20px;
 }
 
 /* SECTIONS */
 .section{padding:100px 0}
-.section.dark{
-  background:var(--dark);
-  color:#e5e7eb;
-}
-.section.soft{
-  background:#f4f7fb;
-}
 .center{text-align:center}
 
 /* CARDS */
@@ -118,11 +92,11 @@ nav a{
   background:#fff;
   padding:34px;
   border-radius:var(--radius);
-  box-shadow:0 20px 50px rgba(0,0,0,.12);
+  box-shadow:0 18px 45px rgba(0,0,0,.12);
   font-weight:600;
 }
 
-/* SERVICES GRID */
+/* SERVICES */
 .services-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -130,46 +104,21 @@ nav a{
   margin-top:50px;
 }
 .services-grid div{
-  background:var(--dark-2);
+  background:var(--dark2);
   color:#e5e7eb;
   padding:24px;
   border-radius:var(--radius);
 }
 
-/* WHY */
-.why{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:22px;
-  margin-top:50px;
-}
-
-/* FOUNDER */
-.founder{
-  display:flex;
-  gap:26px;
-  align-items:center;
-  justify-content:center;
-}
-.avatar{
-  width:120px;
-  height:120px;
-  border-radius:50%;
-  background:#d1d5db;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-/* CTA STRIP */
+/* CTA */
 .cta-strip{
   background:#0a2742;
   color:#fff;
-  padding:90px 20px;
+  padding:80px 20px;
   text-align:center;
 }
 
-/* FLOATING BUTTONS */
+/* FLOAT BUTTONS */
 .wa-float,.call-float{
   position:fixed;
   bottom:20px;
@@ -186,7 +135,7 @@ nav a{
 .wa-float{right:20px;background:#25D366}
 .call-float{left:20px;background:#0a2742}
 
-/* ANIMATION */
+/* SCROLL ANIMATION */
 .hidden{
   opacity:0;
   transform:translateY(40px);
@@ -199,6 +148,6 @@ nav a{
 
 /* MOBILE */
 @media(max-width:768px){
-  .hero-inner h1{font-size:2.4rem}
+  .hero-inner h1{font-size:2.3rem}
   nav a{margin-left:14px}
 }
