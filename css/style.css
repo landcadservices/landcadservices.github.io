@@ -3,13 +3,15 @@
 ========================= */
 
 :root{
-  --dark:#0b1220;
-  --dark2:#0f172a;
+  --dark:#2b2e34;     /* premium dark grey */
+  --dark2:#1f2328;   /* deeper grey */
   --light:#ffffff;
-  --text:#111827;
-  --muted:#94a3b8;
-  --accent:#ff7a18;
+  --text:#1f2937;
+  --muted:#9ca3af;
+  --accent:#9ca3af;  /* silver accent */
   --radius:16px;
+}
+
 }
 
 body{
