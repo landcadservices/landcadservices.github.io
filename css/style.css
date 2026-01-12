@@ -274,3 +274,50 @@ body{
   background:linear-gradient(135deg,#0a2742,#111827);
   transform:translateY(-5px);
 }
+/* ===== FOUNDER PROFILE ===== */
+.founder-grid{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:50px;
+  align-items:center;
+}
+
+.founder-photo img{
+  width:100%;
+  max-width:300px;
+  border-radius:18px;
+  box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.founder-content h2{
+  font-size:34px;
+  margin-bottom:5px;
+}
+
+.founder-content h4{
+  color:#6b7280;
+  margin-bottom:5px;
+}
+
+.founder-degree{
+  font-weight:600;
+  margin-bottom:20px;
+  color:#374151;
+}
+
+.timeline{
+  margin-top:30px;
+  border-left:3px solid var(--accent);
+  padding-left:20px;
+}
+
+.timeline div{
+  margin-bottom:15px;
+  font-weight:500;
+}
+
+.timeline span{
+  font-weight:700;
+  color:var(--accent);
+  margin-right:10px;
+}
