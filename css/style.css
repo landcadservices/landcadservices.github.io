@@ -250,3 +250,27 @@ body{
   filter:none;
   opacity:1;
 }
+/* ===== TRUST BOXES (NO IMAGE REQUIRED) ===== */
+.trust-boxes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.trust-boxes div{
+  background:#0f172a;
+  color:#ffffff;
+  padding:30px 20px;
+  text-align:center;
+  border-radius:12px;
+  font-weight:600;
+  letter-spacing:.3px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+  transition:.3s ease;
+}
+
+.trust-boxes div:hover{
+  background:linear-gradient(135deg,#0a2742,#111827);
+  transform:translateY(-5px);
+}
