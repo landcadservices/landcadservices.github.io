@@ -176,3 +176,55 @@ nav a{
   background:var(--accent);
   opacity:.6;
 }
+/* ===== VISIBILITY & COLOR FIX ===== */
+
+/* DEFAULT SECTION BACKGROUND */
+.section{
+  background:#ffffff;
+}
+
+/* ALTERNATE SECTION COLOR */
+.section:nth-of-type(even){
+  background:#f4f7fb;
+}
+
+/* DARK SECTION FORCE */
+.section.dark{
+  background:#0b1220 !important;
+  color:#e5e7eb !important;
+}
+
+/* TEXT COLOR BOOST */
+h1,h2,h3{
+  color:#0a2742;
+}
+.section.dark h1,
+.section.dark h2,
+.section.dark h3{
+  color:#ffffff;
+}
+
+/* CARD CONTRAST FIX */
+.card{
+  background:#ffffff;
+  border-left:5px solid var(--accent);
+}
+.services-grid div{
+  background:#0f172a;
+  border-left:5px solid var(--accent);
+}
+
+/* CTA STRIP STRONG */
+.cta-strip{
+  background:linear-gradient(135deg,#0a2742,#111827);
+}
+
+/* NAVBAR COLOR BOOST */
+.topbar{
+  background:rgba(10,39,66,.95);
+}
+
+/* REMOVE DULL LOOK */
+body{
+  filter:none;
+}
