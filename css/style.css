@@ -58,10 +58,11 @@ nav a{
 
 /* ---------- HERO STRIP ---------- */
 .hero{
+  position:relative;
   background-size:cover;
   background-position:center;
-  position:relative;
-  margin-top:0;
+  height:90vh;
+  padding-top:80px;
 }
 
 .hero-overlay{
