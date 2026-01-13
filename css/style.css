@@ -1,7 +1,22 @@
-/* =================================================
-   LANDCAD SERVICES – FINAL PROFESSIONAL CSS
-================================================= */
+/* =====================================================
+   LANDCAD SERVICES – PREMIUM ENTERPRISE UI (FINAL)
+   Government | Infrastructure | Corporate Grade
+===================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+  --dark:#1f242c;
+  --dark2:#2b313c;
+  --light:#ffffff;
+  --bg:#f4f6f8;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --accent:#c9a24d;
+  --radius:18px;
+}
+
+/* RESET */
 *{
   margin:0;
   padding:0;
@@ -9,15 +24,15 @@
 }
 
 body{
-  font-family: "Segoe UI", Arial, sans-serif;
-  background:#f4f6f8;
-  color:#1f2937;
-  line-height:1.7;
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.75;
 }
 
-/* ---------- HEADER ---------- */
+/* HEADER */
 .topbar{
-  background:#1f242c;
+  background:var(--dark);
   position:sticky;
   top:0;
   z-index:1000;
@@ -26,65 +41,68 @@ body{
 .nav{
   max-width:1200px;
   margin:auto;
-  padding:18px 20px;
+  padding:20px;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
 
 .logo{
-  height:70px;
+  height:78px;
 }
 
 nav a{
   color:#fff;
   text-decoration:none;
-  margin-left:28px;
+  margin-left:32px;
   font-weight:500;
 }
 
-nav a:hover{
-  color:#d4a373;
+nav a:hover,
+nav a.active{
+  color:var(--accent);
 }
 
-/* ---------- HERO ---------- */
+/* HERO */
 .hero{
-  min-height:90vh;
+  min-height:92vh;
   background-size:cover;
   background-position:center;
   position:relative;
-  display:flex;
-  align-items:center;
 }
 
 .hero-overlay{
-  width:100%;
-  padding:0 20px;
+  position:absolute;
+  inset:0;
   background:linear-gradient(
     rgba(31,36,44,0.65),
-    rgba(31,36,44,0.9)
+    rgba(31,36,44,0.92)
   );
-  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
+  color:#fff;
+  padding:20px;
 }
 
 .hero-overlay h1{
-  font-size:3rem;
+  font-size:3.2rem;
   margin-bottom:16px;
 }
 
 .hero-overlay p{
-  font-size:1.1rem;
+  font-size:1.15rem;
   color:#e5e7eb;
 }
 
-/* ---------- SECTIONS ---------- */
+/* SECTIONS */
 .section{
-  padding:90px 20px;
+  padding:110px 20px;
 }
 
 .section.light{
-  background:#fff;
+  background:var(--light);
 }
 
 .container{
@@ -96,67 +114,76 @@ nav a:hover{
   text-align:center;
 }
 
-/* ---------- GRID ---------- */
+/* GRID SYSTEM */
 .grid-3{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-  margin-top:40px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:36px;
+  margin-top:50px;
 }
 
 .two-col{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:60px;
+  gap:70px;
   align-items:center;
 }
 
-/* ---------- CARDS ---------- */
+/* CARDS */
 .card{
   background:#fff;
-  border-radius:16px;
-  padding:20px;
-  text-align:center;
-  box-shadow:0 18px 40px rgba(0,0,0,0.12);
+  border-radius:var(--radius);
+  padding:26px;
+  box-shadow:0 22px 55px rgba(0,0,0,.14);
+  transition:.35s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 28px 70px rgba(0,0,0,.18);
 }
 
 .card img{
   width:100%;
-  height:200px;
+  height:220px;
   object-fit:cover;
-  border-radius:12px;
-  margin-bottom:16px;
+  border-radius:14px;
+  margin-bottom:18px;
 }
 
 .card h3{
-  font-size:1.1rem;
+  font-size:1.2rem;
+  margin-bottom:6px;
 }
 
-/* ---------- IMAGES ---------- */
+/* IMAGES */
 img{
   max-width:100%;
 }
 
 .rounded{
-  border-radius:16px;
-  box-shadow:0 18px 40px rgba(0,0,0,0.15);
+  border-radius:var(--radius);
+  box-shadow:0 20px 55px rgba(0,0,0,.18);
 }
 
-/* ---------- FOOTER ---------- */
+/* FOOTER */
 .footer{
-  background:#1f242c;
+  background:var(--dark);
   color:#d1d5db;
   text-align:center;
-  padding:40px 20px;
-  font-size:0.95rem;
+  padding:60px 20px 35px;
+  font-size:.95rem;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* RESPONSIVE */
 @media(max-width:900px){
   .two-col{
     grid-template-columns:1fr;
   }
   .hero-overlay h1{
-    font-size:2.2rem;
+    font-size:2.3rem;
+  }
+  nav a{
+    margin-left:18px;
   }
 }
