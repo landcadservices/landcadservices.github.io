@@ -1,151 +1,208 @@
+/* ===============================
+   LANDCAD SERVICES – GLOBAL CSS
+   Professional Surveying Website
+=============================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-*{box-sizing:border-box}
+:root{
+  --dark:#1f242c;
+  --dark2:#2a303b;
+  --light:#ffffff;
+  --bg:#f4f6f8;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --accent:#d4a373;
+  --radius:14px;
+}
+
+*{
+  box-sizing:border-box;
+}
 
 body{
   margin:0;
   font-family:Inter,Segoe UI,Arial,sans-serif;
-  background:#f6f7f9;
+  background:var(--bg);
   color:var(--text);
+  line-height:1.7;
 }
 
-/* HEADER */
+/* ---------- HEADER ---------- */
 .topbar{
   position:sticky;
   top:0;
   background:var(--dark);
   z-index:999;
 }
+
 .nav{
   max-width:1200px;
   margin:auto;
+  padding:18px 20px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:18px 20px;
 }
+
 .logo{
-  height:64px; /* BIG LOGO */
+  height:68px;
 }
+
 nav a{
-  color:#fff;
-  margin-left:26px;
+  color:#ffffff;
+  margin-left:28px;
   text-decoration:none;
   font-weight:500;
 }
 
-/* HERO */
+/* ---------- HERO STRIP ---------- */
 .hero{
-  height:90vh;
   background-size:cover;
   background-position:center;
 }
+
 .hero-overlay{
+  background:linear-gradient(
+    rgba(31,36,44,.6),
+    rgba(31,36,44,.9)
+  );
   height:100%;
-  background:linear-gradient(180deg,rgba(27,31,39,.55),rgba(27,31,39,.9));
   display:flex;
   align-items:center;
 }
+
 .hero-content{
   max-width:900px;
   padding:0 20px;
-  color:#fff;
-}
-.hero-content h1{
-  font-size:3.6rem;
-}
-.hero-content p{
-  color:#e5e7eb;
-  font-size:1.2rem;
+  color:#ffffff;
 }
 
-/* SECTIONS */
+.hero-content h1{
+  font-size:3rem;
+  margin-bottom:12px;
+}
+
+.hero-content p{
+  color:#e5e7eb;
+  font-size:1.1rem;
+}
+
+/* ---------- SECTIONS ---------- */
 .section{
   padding:90px 20px;
 }
+
+.section.soft{
+  background:var(--light);
+}
+
 .container{
   max-width:1200px;
   margin:auto;
 }
-.section.soft{
-  background:#eef1f5;
-}
-.center{text-align:center}
 
-/* IMAGE GRID */
-.image-3{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-.image-3 img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  border-radius:14px;
-}
-
-/* SERVICES */
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:26px;
-}
-.service-box{
-  background:#fff;
-  padding:30px;
-  border-radius:var(--radius);
-  box-shadow:0 15px 40px rgba(0,0,0,.12);
-}
-.service-box img{
-  height:48px;
-  margin-bottom:16px;
-}
-
-/* ABOUT IMAGE */
-.about-img{
-  width:100%;
-  max-width:900px;
-  margin:40px auto;
-  display:block;
-  border-radius:16px;
-}
-
-/* FOUNDER */
-.founder{
-  display:grid;
-  grid-template-columns:1fr 2fr;
-  gap:40px;
-  align-items:center;
-}
-
-/* CTA */
-.cta{
-  background:var(--primary);
-  color:#fff;
-  padding:80px 20px;
+.center{
   text-align:center;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-  .hero-content h1{font-size:2.4rem}
-  .image-3{grid-template-columns:1fr}
-  .founder{grid-template-columns:1fr}
+/* ---------- GRID ---------- */
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
 }
-/* IMAGE BASED SERVICES */
-.service-box img{
+
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+/* ---------- IMAGES ---------- */
+.img-round{
   width:100%;
-  height:180px;
-  object-fit:cover;
-  border-radius:12px;
-  margin-bottom:16px;
+  border-radius:16px;
+  box-shadow:0 16px 40px rgba(0,0,0,.18);
 }
 
-.service-box{
+/* ---------- BUTTONS ---------- */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 28px;
+  background:var(--accent);
+  color:#000;
+  font-weight:600;
+  text-decoration:none;
+  border-radius:30px;
+}
+
+.btn-outline{
+  display:inline-block;
+  margin-top:30px;
+  padding:12px 26px;
+  border:2px solid var(--accent);
+  color:#000;
+  text-decoration:none;
+  border-radius:30px;
+}
+
+/* ---------- CARDS ---------- */
+.card, .service-card{
+  background:#ffffff;
+  border-radius:16px;
   overflow:hidden;
+  box-shadow:0 18px 45px rgba(0,0,0,.14);
 }
 
-.service-box h3{
-  margin-top:10px;
+.card img, .service-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card h3, .service-card h4{
+  padding:18px;
+}
+
+/* ---------- CTA ---------- */
+.cta{
+  background:var(--dark2);
+  color:#ffffff;
+  padding:90px 20px;
+}
+
+.cta h2{
+  color:var(--accent);
+}
+
+/* ---------- FOOTER ---------- */
+.footer{
+  background:var(--dark);
+  color:#d1d5db;
+  padding:60px 20px 30px;
+}
+
+.footer h4{
+  color:#ffffff;
+}
+
+.footer p{
+  font-size:.95rem;
+}
+
+.copyright{
+  text-align:center;
+  margin-top:30px;
+  font-size:.85rem;
+  color:#9ca3af;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:900px){
+  .grid-2{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .hero-content h1{font-size:2.2rem}
 }
