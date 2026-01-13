@@ -80,25 +80,37 @@
 </section>
 
 <!-- ================= ENQUIRY FORM ================= -->
-<section class="section">
-  <div class="container">
-    <h2>Submit Project Enquiry</h2>
-    <p>
-      Share your project details and our team will respond with appropriate
-      technical support and service information.
-    </p>
+<<form action="https://formsubmit.co/landcadservice@gmail.com" method="POST">
 
-    <form>
-      <input type="text" placeholder="Full Name *" required>
-      <input type="text" placeholder="Organization / Department">
-      <input type="tel" placeholder="Mobile Number *" required>
-      <input type="email" placeholder="Email Address">
-      <input type="text" placeholder="Type of Survey / Service Required">
-      <textarea placeholder="Brief Project Description"></textarea>
-      <button type="submit" class="btn">Submit Enquiry</button>
-    </form>
-  </div>
-</section>
+  <!-- REQUIRED SETTINGS -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_subject" value="New Enquiry - LandCad Services">
+  <input type="hidden" name="_next" value="https://landcadservices.github.io/contact.html">
+
+  <!-- USER FIELDS -->
+  <input type="text" name="Name" placeholder="Full Name *" required>
+  <input type="text" name="Organization" placeholder="Organization / Department">
+  <input type="tel" name="Mobile" placeholder="Mobile Number *" required>
+  <input type="email" name="Email" placeholder="Email Address">
+  <input type="text" name="Service" placeholder="Type of Survey / Service Required">
+  <textarea name="Message" placeholder="Brief Project Description"></textarea>
+
+  <!-- WHATSAPP BUTTON -->
+  <a
+    href="https://wa.me/919511802954"
+    target="_blank"
+    class="btn-outline"
+    style="display:block;text-align:center;margin-bottom:16px;"
+  >
+    Chat on WhatsApp
+  </a>
+
+  <!-- SUBMIT -->
+  <button type="submit" class="btn">Submit Enquiry</button>
+
+</form>
+
 
 <!-- ================= MAP ================= -->
 <section class="section soft">
