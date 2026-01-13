@@ -1,26 +1,26 @@
-/* =====================================================
-   LANDCAD SERVICES – PREMIUM ENTERPRISE UI (FINAL)
-   Government | Infrastructure | Corporate Grade
-===================================================== */
+/* ==================================================
+   LANDCAD SERVICES – FINAL PREMIUM CSS (2025)
+   Enterprise / Government / Infrastructure Grade
+================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root{
-  --dark:#1f242c;
-  --dark2:#2b313c;
+  --charcoal:#1f242c;
+  --charcoal-2:#2a303b;
   --light:#ffffff;
   --bg:#f4f6f8;
   --text:#1f2937;
   --muted:#6b7280;
-  --accent:#c9a24d;
-  --radius:18px;
+  --accent:#d4a373; /* premium gold */
+  --radius:16px;
 }
 
-/* RESET */
+/* ================= RESET ================= */
 *{
+  box-sizing:border-box;
   margin:0;
   padding:0;
-  box-sizing:border-box;
 }
 
 body{
@@ -30,78 +30,80 @@ body{
   line-height:1.75;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .topbar{
-  background:var(--dark);
   position:sticky;
   top:0;
-  z-index:1000;
+  background:var(--charcoal);
+  z-index:999;
 }
 
 .nav{
   max-width:1200px;
   margin:auto;
-  padding:20px;
+  padding:18px 20px;
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
 }
 
 .logo{
-  height:78px;
+  height:72px;
 }
 
 nav a{
-  color:#fff;
+  color:#ffffff;
+  margin-left:30px;
   text-decoration:none;
-  margin-left:32px;
   font-weight:500;
 }
 
-nav a:hover,
-nav a.active{
+nav a.active,
+nav a:hover{
   color:var(--accent);
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero{
-  min-height:92vh;
+  position:relative;
   background-size:cover;
   background-position:center;
-  position:relative;
+  min-height:90vh;
 }
 
 .hero-overlay{
   position:absolute;
   inset:0;
   background:linear-gradient(
-    rgba(31,36,44,0.65),
-    rgba(31,36,44,0.92)
+    rgba(31,36,44,.65),
+    rgba(31,36,44,.92)
   );
   display:flex;
   align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:#fff;
-  padding:20px;
 }
 
-.hero-overlay h1{
-  font-size:3.2rem;
+.hero-content{
+  max-width:900px;
+  padding:0 24px;
+  color:#ffffff;
+}
+
+.hero-content h1{
+  font-size:3.1rem;
   margin-bottom:16px;
 }
 
-.hero-overlay p{
-  font-size:1.15rem;
+.hero-content p{
+  font-size:1.1rem;
   color:#e5e7eb;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 .section{
-  padding:110px 20px;
+  padding:100px 20px;
 }
 
-.section.light{
+.section.soft{
   background:var(--light);
 }
 
@@ -114,76 +116,171 @@ nav a.active{
   text-align:center;
 }
 
-/* GRID SYSTEM */
-.grid-3{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:36px;
-  margin-top:50px;
+.section-title{
+  text-align:center;
+  margin-bottom:30px;
 }
 
-.two-col{
+/* ================= GRID ================= */
+.grid-2{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:70px;
+  gap:60px;
   align-items:center;
 }
 
-/* CARDS */
-.card{
-  background:#fff;
-  border-radius:var(--radius);
-  padding:26px;
-  box-shadow:0 22px 55px rgba(0,0,0,.14);
-  transition:.35s ease;
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
 }
 
-.card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 28px 70px rgba(0,0,0,.18);
-}
-
-.card img{
+/* ================= IMAGES ================= */
+.img-round{
   width:100%;
-  height:220px;
-  object-fit:cover;
-  border-radius:14px;
-  margin-bottom:18px;
-}
-
-.card h3{
-  font-size:1.2rem;
-  margin-bottom:6px;
-}
-
-/* IMAGES */
-img{
-  max-width:100%;
-}
-
-.rounded{
   border-radius:var(--radius);
-  box-shadow:0 20px 55px rgba(0,0,0,.18);
+  box-shadow:0 18px 40px rgba(0,0,0,.18);
 }
 
-/* FOOTER */
+/* ================= BUTTONS ================= */
+.btn{
+  display:inline-block;
+  margin-top:26px;
+  padding:14px 36px;
+  background:var(--accent);
+  color:#000;
+  font-weight:600;
+  text-decoration:none;
+  border-radius:30px;
+}
+
+.btn:hover{
+  opacity:.9;
+}
+
+.btn-outline{
+  display:inline-block;
+  margin-top:26px;
+  padding:12px 34px;
+  border:2px solid var(--accent);
+  color:#000;
+  text-decoration:none;
+  border-radius:30px;
+}
+
+/* ================= CARDS ================= */
+.card{
+  background:#ffffff;
+  border-radius:var(--radius);
+  padding:28px;
+  box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+/* ================= SERVICES ================= */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:34px;
+  margin-top:40px;
+}
+
+.service-card{
+  background:#ffffff;
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:0 18px 45px rgba(0,0,0,.14);
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.service-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 24px 55px rgba(0,0,0,.2);
+}
+
+.service-card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  display:block;
+}
+
+.service-body{
+  padding:22px;
+}
+
+.service-body h3{
+  font-size:1.15rem;
+  margin-bottom:10px;
+}
+
+.service-body p{
+  font-size:.95rem;
+  color:#4b5563;
+}
+
+/* ================= LISTS ================= */
+ul{
+  margin-top:18px;
+  padding-left:22px;
+}
+
+ul li{
+  margin-bottom:10px;
+}
+
+/* ================= CTA ================= */
+.cta{
+  background:var(--charcoal-2);
+  color:#ffffff;
+  padding:100px 20px;
+}
+
+.cta h2{
+  color:var(--accent);
+  margin-bottom:14px;
+}
+
+/* ================= FORMS ================= */
+form{
+  max-width:700px;
+}
+
+form input,
+form textarea{
+  width:100%;
+  padding:14px 16px;
+  margin-bottom:14px;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  font-family:inherit;
+}
+
+form textarea{
+  min-height:140px;
+}
+
+/* ================= FOOTER ================= */
 .footer{
-  background:var(--dark);
+  background:var(--charcoal);
   color:#d1d5db;
+  padding:60px 20px 30px;
+}
+
+.footer p{
   text-align:center;
-  padding:60px 20px 35px;
   font-size:.95rem;
 }
 
-/* RESPONSIVE */
+.copyright{
+  margin-top:20px;
+  font-size:.85rem;
+  color:#9ca3af;
+}
+
+/* ================= RESPONSIVE ================= */
 @media(max-width:900px){
-  .two-col{
-    grid-template-columns:1fr;
-  }
-  .hero-overlay h1{
-    font-size:2.3rem;
-  }
-  nav a{
-    margin-left:18px;
-  }
+  .grid-2{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .hero-content h1{font-size:2.3rem}
+  nav a{margin-left:18px}
 }
