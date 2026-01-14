@@ -1,389 +1,131 @@
-/* ==================================================
-   LANDCAD SERVICES – FINAL PREMIUM CSS (2025)
-   Enterprise / Government / Infrastructure Grade
-================================================== */
+/* ===============================
+   LANDCAD – ENTERPRISE UI FINAL
+================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-:root{
-  --charcoal:#1f242c;
-  --charcoal-2:#2a303b;
-  --light:#ffffff;
-  --bg:#f4f6f8;
-  --text:#1f2937;
-  --muted:#6b7280;
-  --accent:#d4a373; /* premium gold */
-  --radius:16px;
-}
-
-/* ================= RESET ================= */
 *{
-  box-sizing:border-box;
   margin:0;
   padding:0;
+  box-sizing:border-box;
 }
 
 body{
-  font-family:Inter,Segoe UI,Arial,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.75;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:#f4f6f8;
+  color:#111;
 }
 
-/* ================= HEADER ================= */
-.topbar{
+/* HEADER */
+.header{
+  background:#1f2933;
   position:sticky;
   top:0;
-  background:var(--charcoal);
   z-index:999;
 }
 
 .nav{
-  max-width:1200px;
-  margin:auto;
-  padding:18px 20px;
   display:flex;
   align-items:center;
   justify-content:space-between;
 }
 
 .logo{
-  height:72px;
+  height:52px;
 }
 
 nav a{
-  color:#ffffff;
-  margin-left:30px;
+  color:#fff;
   text-decoration:none;
+  margin-left:25px;
   font-weight:500;
 }
 
-nav a.active,
-nav a:hover{
-  color:var(--accent);
+nav a.active{
+  border-bottom:2px solid #f59e0b;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 .hero{
-  position:relative;
+  height:55vh;
   background-size:cover;
   background-position:center;
-  min-height:90vh;
 }
 
 .hero-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    rgba(31,36,44,.65),
-    rgba(31,36,44,.92)
-  );
+  height:100%;
+  background:rgba(0,0,0,.55);
   display:flex;
-  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+  padding:0 8%;
+  color:#fff;
 }
 
-.hero-content{
-  max-width:900px;
-  padding:0 24px;
-  color:#ffffff;
+.hero h1{
+  font-size:3rem;
 }
 
-.hero-content h1{
-  font-size:3.1rem;
-  margin-bottom:16px;
-}
-
-.hero-content p{
+.hero p{
+  margin-top:10px;
   font-size:1.1rem;
-  color:#e5e7eb;
 }
 
-/* ================= SECTIONS ================= */
+/* SECTIONS */
 .section{
-  padding:100px 20px;
-}
-
-.section.soft{
-  background:var(--light);
+  padding:80px 0;
 }
 
 .container{
+  width:90%;
   max-width:1200px;
   margin:auto;
 }
 
-.center{
-  text-align:center;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:30px;
-}
-
-/* ================= GRID ================= */
-.grid-2{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
-  align-items:center;
-}
-
-.grid-3{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-}
-
-/* ================= IMAGES ================= */
-.img-round{
-  width:100%;
-  border-radius:var(--radius);
-  box-shadow:0 18px 40px rgba(0,0,0,.18);
-}
-
-/* ================= BUTTONS ================= */
-.btn{
-  display:inline-block;
-  margin-top:26px;
-  padding:14px 36px;
-  background:var(--accent);
-  color:#000;
-  font-weight:600;
-  text-decoration:none;
-  border-radius:30px;
-}
-
-.btn:hover{
-  opacity:.9;
-}
-
-.btn-outline{
-  display:inline-block;
-  margin-top:26px;
-  padding:12px 34px;
-  border:2px solid var(--accent);
-  color:#000;
-  text-decoration:none;
-  border-radius:30px;
-}
-
-/* ================= CARDS ================= */
-.card{
-  background:#ffffff;
-  border-radius:var(--radius);
-  padding:28px;
-  box-shadow:0 18px 45px rgba(0,0,0,.12);
-}
-
-/* ================= SERVICES ================= */
+/* SERVICES */
 .services-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:34px;
-  margin-top:40px;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:40px;
 }
 
 .service-card{
-  background:#ffffff;
-  border-radius:var(--radius);
+  background:#fff;
+  border-radius:16px;
   overflow:hidden;
-  box-shadow:0 18px 45px rgba(0,0,0,.14);
-  transition:transform .35s ease, box-shadow .35s ease;
+  box-shadow:0 18px 50px rgba(0,0,0,.15);
+  transition:.3s;
 }
 
 .service-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 24px 55px rgba(0,0,0,.2);
+  transform:translateY(-6px);
 }
 
 .service-card img{
   width:100%;
   height:230px;
   object-fit:cover;
-  display:block;
 }
 
-.service-body{
-  padding:22px;
-}
-
-.service-body h3{
+.service-card h3{
+  padding:18px 20px 6px;
   font-size:1.15rem;
-  margin-bottom:10px;
 }
 
-.service-body p{
+.service-card p{
+  padding:0 20px 22px;
   font-size:.95rem;
   color:#4b5563;
 }
 
-/* ================= LISTS ================= */
-ul{
-  margin-top:18px;
-  padding-left:22px;
-}
-
-ul li{
-  margin-bottom:10px;
-}
-
-/* ================= CTA ================= */
-.cta{
-  background:var(--charcoal-2);
-  color:#ffffff;
-  padding:100px 20px;
-}
-
-.cta h2{
-  color:var(--accent);
-  margin-bottom:14px;
-}
-
-/* ================= FORMS ================= */
-form{
-  max-width:700px;
-}
-
-form input,
-form textarea{
-  width:100%;
-  padding:14px 16px;
-  margin-bottom:14px;
-  border:1px solid #d1d5db;
-  border-radius:10px;
-  font-family:inherit;
-}
-
-form textarea{
-  min-height:140px;
-}
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 .footer{
-  background:var(--charcoal);
-  color:#d1d5db;
-  padding:60px 20px 30px;
-}
-
-.footer p{
+  background:#1f2933;
+  color:#fff;
   text-align:center;
-  font-size:.95rem;
-}
-
-.copyright{
-  margin-top:20px;
-  font-size:.85rem;
-  color:#9ca3af;
-}
-
-/* ================= RESPONSIVE ================= */
-@media(max-width:900px){
-  .grid-2{grid-template-columns:1fr}
-  .grid-3{grid-template-columns:1fr}
-  .hero-content h1{font-size:2.3rem}
-  nav a{margin-left:18px}
-}
-/* ================================
-   SERVICES PAGE – IMAGE FIX (FINAL)
-================================ */
-
-/* Services grid spacing */
-.services-grid,
-.grid-3{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:40px;
-}
-
-/* Service card alignment */
-.services-grid .card,
-.grid-3 .card{
-  padding:0;
-  overflow:hidden;
-  text-align:left;
-}
-
-/* Service images – SAME HEIGHT, PRO LOOK */
-.services-grid img,
-.grid-3 img{
-  width:100%;
-  height:240px;
-  object-fit:cover;
-  display:block;
-  border-radius:14px 14px 0 0;
-}
-
-/* Service content */
-.services-grid h3,
-.grid-3 h3{
-  padding:16px 18px 6px;
-  font-size:1.15rem;
-}
-
-.services-grid p,
-.grid-3 p{
-  padding:0 18px 20px;
-  color:#4b5563;
-  font-size:0.95rem;
-}
-/* =========================================
-   SERVICES – GUARANTEED PRO GRID (FINAL)
-========================================= */
-
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:40px;
-  margin-top:50px;
-}
-
-.service-card{
-  background:#ffffff;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 20px 50px rgba(0,0,0,.15);
-  transition:transform .35s ease, box-shadow .35s ease;
-}
-
-.service-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 30px 70px rgba(0,0,0,.2);
-}
-
-/* IMAGE HOLDER – FIXED HEIGHT */
-.service-img{
-  width:100%;
-  height:240px;        /* 🔥 SAME HEIGHT GUARANTEED */
-  overflow:hidden;
-}
-
-.service-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover;    /* 🔥 NO STRETCH, NO DISTORT */
-  display:block;
-}
-
-/* CONTENT */
-.service-content{
-  padding:22px 24px 26px;
-}
-
-.service-content h3{
-  font-size:1.2rem;
-  margin-bottom:8px;
-}
-
-.service-content p{
-  font-size:.95rem;
-  color:#4b5563;
-  line-height:1.6;
+  padding:25px;
 }
 
 /* MOBILE */
 @media(max-width:768px){
-  .service-img{
-    height:220px;
-  }
+  .hero h1{font-size:2.2rem;}
+  .hero{height:45vh;}
 }
