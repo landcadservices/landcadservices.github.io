@@ -1,4 +1,66 @@
 /* =========================
+   GLOBAL TOP HEADER / STRIP
+========================= */
+
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(90deg,#0e1a24,#1f2f3f);
+  box-shadow: 0 8px 30px rgba(0,0,0,.25);
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 40px;
+}
+
+.logo{
+  height:58px;
+  width:auto;
+}
+
+.nav nav a{
+  color:#fff;
+  margin-left:28px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:.95rem;
+  letter-spacing:.4px;
+  position:relative;
+}
+
+.nav nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0;
+  height:2px;
+  background:#ffb703;
+  transition:.3s;
+}
+
+.nav nav a:hover::after{
+  width:100%;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .nav{
+    padding:12px 20px;
+  }
+  .nav nav a{
+    margin-left:14px;
+    font-size:.9rem;
+  }
+  .logo{
+    height:46px;
+  }
+}
+/* =========================
    LANDCAD – ENTERPRISE UI
 ========================= */
 
