@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About Us | LandCad Services</title>
+  <title>Contact Us | LandCad Services</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-        content="Learn about LandCad Services – a professional land surveying and geospatial solutions company delivering accurate, reliable and cost-effective survey services." />
+        content="Contact LandCad Services for professional land surveying, drone mapping and GIS solutions. Nagpur based surveying company." />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -19,99 +19,78 @@
     <img src="assets/logo.png" class="logo" alt="LandCad Logo" />
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
+      <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </div>
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="page-hero" style="background-image:url('assets/about.jpg')">
+<section class="page-hero" style="background-image:url('assets/hero.jpg')">
   <div class="hero-overlay">
     <div class="container">
-      <h1>About LandCad Services</h1>
-      <p>Trusted Surveying & Geospatial Solutions Partner</p>
+      <h1>Contact Us</h1>
+      <p>Get in touch for reliable surveying & geospatial solutions</p>
     </div>
   </div>
 </section>
 
-<!-- ================= COMPANY OVERVIEW ================= -->
+<!-- ================= CONTACT SECTION ================= -->
 <section class="section">
-  <div class="container about-grid">
-    <div>
-      <h2>Who We Are</h2>
+  <div class="container contact-grid">
+
+    <!-- LEFT: OFFICE DETAILS -->
+    <div class="contact-box">
+      <h2>Office Address</h2>
+      <p><strong>LandCad Services</strong></p>
+      <p>New Mankapur, Nagpur<br>
+         Maharashtra – 440030</p>
+
+      <p><strong>Email:</strong><br>
+         landcadservices@gmail.com</p>
+
+      <p><strong>Phone:</strong><br>
+         +91 95118 02954</p>
+
       <p>
-        LandCad Services is a professional land surveying and geospatial solutions
-        company headquartered in Nagpur, Maharashtra. Founded with a strong
-        technical foundation, we serve government, infrastructure, corporate
-        and private sector clients across the region.
-      </p>
-      <p>
-        Our work philosophy is built on accuracy, compliance and efficiency.
-        We combine traditional surveying expertise with modern instruments,
-        drone technology and GIS-based workflows to deliver dependable results
-        for critical projects.
+        We serve government, infrastructure, corporate and private sector
+        clients with professional surveying and mapping solutions.
       </p>
     </div>
 
-    <div>
-      <img src="assets/survey1.jpg" alt="Land Survey Field Work">
+    <!-- RIGHT: CONTACT FORM -->
+    <div class="contact-box">
+      <h2>Send an Enquiry</h2>
+
+      <!-- BASIC HTML FORM (email-ready) -->
+      <form action="https://formsubmit.co/landcadservices@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Phone Number">
+        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+      </form>
     </div>
+
   </div>
 </section>
 
-<!-- ================= WHY LANDCAD ================= -->
+<!-- ================= GOOGLE MAP ================= -->
 <section class="section light">
   <div class="container">
-    <h2 class="section-title">Why LandCad Services</h2>
+    <h2 class="section-title">Our Location</h2>
 
-    <div class="why-grid">
-      <div class="why-box">✔ Experienced Survey Professionals</div>
-      <div class="why-box">✔ Government & Infrastructure Expertise</div>
-      <div class="why-box">✔ Modern Instruments & Drone Technology</div>
-      <div class="why-box">✔ Accurate, Compliant Deliverables</div>
-      <div class="why-box">✔ Cost-Efficient Project Execution</div>
-      <div class="why-box">✔ Timely Completion & Clear Reporting</div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= INSTRUMENTS & SOFTWARE ================= -->
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Instruments & Technology We Use</h2>
-
-    <div class="tech-grid">
-      <div class="tech-card">Total Station & GNSS / DGPS</div>
-      <div class="tech-card">UAV / Drone Survey Systems</div>
-      <div class="tech-card">AutoCAD & Civil CAD Tools</div>
-      <div class="tech-card">GIS Mapping & Spatial Analysis</div>
-      <div class="tech-card">DSM / DTM & Volume Computation</div>
-      <div class="tech-card">Georeferencing & Data Processing</div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOUNDER ================= -->
-<section class="section light">
-  <div class="container founder-grid">
-    <img src="assets/about.jpg" alt="Founder LandCad">
-
-    <div>
-      <h2>Leadership</h2>
-      <h3>Kunal Tidke</h3>
-      <p><strong>Founder & Managing Director</strong></p>
-      <p>MBA – Operations Management</p>
-
-      <p>
-        With extensive field experience in land surveying and infrastructure
-        projects, the leadership at LandCad Services focuses on operational
-        efficiency, quality assurance and client satisfaction. The company
-        follows structured project execution practices to ensure accuracy,
-        transparency and timely delivery.
-      </p>
-    </div>
+    <iframe
+      src="https://www.google.com/maps?q=New%20Mankapur%20Nagpur%20440030&output=embed"
+      width="100%"
+      height="380"
+      style="border:0; border-radius:18px;"
+      loading="lazy">
+    </iframe>
   </div>
 </section>
 
